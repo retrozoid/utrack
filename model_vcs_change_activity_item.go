@@ -10,7 +10,7 @@ package utrack
 
 // Represents an update in the list of VCSChanges of an issue.
 type VcsChangeActivityItem struct {
-	Removed *interface{} `json:"removed,omitempty"`
-	Added   *interface{} `json:"added,omitempty"`
-	Author  *User        `json:"author,omitempty"`
+	Removed interface{} `json:"removed,omitempty"`
+	Added   interface{} `json:"added,omitempty"`
+	Author  *User       `json:"author,omitempty"`
 }

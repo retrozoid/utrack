@@ -10,9 +10,9 @@ package utrack
 
 // Represents an activity that affects a custom field of an issue.
 type CustomFieldActivityItem struct {
-	Id      string       `json:"id,omitempty"`
-	Type_   string       `json:"$type,omitempty"`
-	Target  *Issue       `json:"target,omitempty"`
-	Removed *interface{} `json:"removed,omitempty"`
-	Added   *interface{} `json:"added,omitempty"`
+	Id      string      `json:"id,omitempty"`
+	Type_   string      `json:"$type,omitempty"`
+	Target  *Issue      `json:"target,omitempty"`
+	Removed interface{} `json:"removed,omitempty"`
+	Added   interface{} `json:"added,omitempty"`
 }

@@ -10,6 +10,6 @@ package utrack
 
 // Represents the change in attributes of a simple type in the target entity: Issue, IssueComment, WorkItem, IssueAttachment.
 type SimpleValueActivityItem struct {
-	Removed *interface{} `json:"removed,omitempty"`
-	Added   *interface{} `json:"added,omitempty"`
+	Removed interface{} `json:"removed,omitempty"`
+	Added   interface{} `json:"added,omitempty"`
 }

@@ -13,5 +13,5 @@ type DatabaseSingleValueIssueCustomField struct {
 	Id                 string              `json:"id,omitempty"`
 	Type_              string              `json:"$type,omitempty"`
 	ProjectCustomField *ProjectCustomField `json:"projectCustomField,omitempty"`
-	Value              *interface{}        `json:"value,omitempty"`
+	Value              interface{}         `json:"value,omitempty"`
 }

@@ -10,20 +10,20 @@ package utrack
 
 // Represents a YouTrack project.
 type Project struct {
-	Name           string       `json:"name,omitempty"`
-	Id             string       `json:"id,omitempty"`
-	Type_          string       `json:"$type,omitempty"`
-	StartingNumber int64        `json:"startingNumber,omitempty"`
-	ShortName      string       `json:"shortName,omitempty"`
-	Description    string       `json:"description,omitempty"`
-	Leader         *User        `json:"leader,omitempty"`
-	CreatedBy      *User        `json:"createdBy,omitempty"`
-	Issues         []Issue      `json:"issues,omitempty"`
-	CustomFields   *interface{} `json:"customFields,omitempty"`
-	Archived       bool         `json:"archived,omitempty"`
-	FromEmail      string       `json:"fromEmail,omitempty"`
-	ReplyToEmail   string       `json:"replyToEmail,omitempty"`
-	Template       bool         `json:"template,omitempty"`
-	IconUrl        string       `json:"iconUrl,omitempty"`
-	Team           *UserGroup   `json:"team,omitempty"`
+	Name           string      `json:"name,omitempty"`
+	Id             string      `json:"id,omitempty"`
+	Type_          string      `json:"$type,omitempty"`
+	StartingNumber int64       `json:"startingNumber,omitempty"`
+	ShortName      string      `json:"shortName,omitempty"`
+	Description    string      `json:"description,omitempty"`
+	Leader         *User       `json:"leader,omitempty"`
+	CreatedBy      *User       `json:"createdBy,omitempty"`
+	Issues         []Issue     `json:"issues,omitempty"`
+	CustomFields   interface{} `json:"customFields,omitempty"`
+	Archived       bool        `json:"archived,omitempty"`
+	FromEmail      string      `json:"fromEmail,omitempty"`
+	ReplyToEmail   string      `json:"replyToEmail,omitempty"`
+	Template       bool        `json:"template,omitempty"`
+	IconUrl        string      `json:"iconUrl,omitempty"`
+	Team           *UserGroup  `json:"team,omitempty"`
 }

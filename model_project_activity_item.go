@@ -10,7 +10,7 @@ package utrack
 
 // Represents the change in the project attribute on an Issue.
 type ProjectActivityItem struct {
-	Target  *Issue       `json:"target,omitempty"`
-	Removed *interface{} `json:"removed,omitempty"`
-	Added   *interface{} `json:"added,omitempty"`
+	Target  *Issue      `json:"target,omitempty"`
+	Removed interface{} `json:"removed,omitempty"`
+	Added   interface{} `json:"added,omitempty"`
 }
