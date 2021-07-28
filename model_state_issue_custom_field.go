@@ -10,6 +10,9 @@ package utrack
 
 // Represents the issue field of the `state` type.
 type StateIssueCustomField struct {
+	Name               string              `json:"name,omitempty"`
 	ProjectCustomField *ProjectCustomField `json:"projectCustomField,omitempty"`
 	Value              *StateBundleElement `json:"value,omitempty"`
+	Id                 string              `json:"id,omitempty"`
+	Type_              string              `json:"$type,omitempty"`
 }

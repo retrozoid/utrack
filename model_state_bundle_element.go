@@ -10,6 +10,8 @@ package utrack
 
 // Represents the state of an issue in YouTrack.
 type StateBundleElement struct {
+	Name          string `json:"name,omitempty"`
 	LocalizedName string `json:"localizedName,omitempty"`
 	IsResolved    bool   `json:"isResolved,omitempty"`
+	Type_         string `json:"$type,omitempty"`
 }
